@@ -59,17 +59,12 @@ class _LoginScreenState extends State<LoginScreen> {
             TextFormField(
               obscureText: true,
               controller: passwordController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 hintText: 'Password',
-                suffix: InkWell(
-                  onTap: () {
-                    toggle.value = ! toggle.value;
-                  },
-                  // this is ternary operator
-                  child: Icon(toggle.value? Icons.visibility_off_outlined : Icons.visibility))
+                
               ),
             ),
-            SizedBox(height: 50,),
+            const SizedBox(height: 50,),
 
             InkWell(
               onTap: () {
